@@ -5,12 +5,46 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	background-color: #222222;
 }
+.odd-color {
+	background-color: #FCFCFC;
+}
+.even-color {
+	background-color: #F6F6F6;
+}
+.selected-color {
+	background-color: #E0F2CA;
+	
+}
+.selected-color .hide {
+	display: block;
+}
+.white-gr {
+	color: #91D132;
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 36%, rgba(0,0,0,0.24) 99%, rgba(0,0,0,0.25) 100%);
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 36%,rgba(0,0,0,0.24) 99%,rgba(0,0,0,0.25) 100%);
+	background: linear-gradient(to bottom,  rgba(255,255,255,1) 36%,rgba(0,0,0,0.24) 99%,rgba(0,0,0,0.25) 100%); 
+}
+.selected-color .white-gr {
+	color: #E7FBE2;
+	background: rgb(157,214,47);
+	background: -moz-linear-gradient(top,  rgba(157,214,47,1) 52%, rgba(120,195,66,1) 100%, rgba(0,87,0,1) 100%, rgba(0,36,0,1) 100%);
+	background: -webkit-linear-gradient(top,  rgba(157,214,47,1) 52%,rgba(120,195,66,1) 100%,rgba(0,87,0,1) 100%,rgba(0,36,0,1) 100%); 
+	background: linear-gradient(to bottom,  rgba(157,214,47,1) 52%,rgba(120,195,66,1) 100%,rgba(0,87,0,1) 100%,rgba(0,36,0,1) 100%); 
+}
 .full-width {
 	width: 100%;
 }
+.hide {
+	display: none;
+}
 .main-container {
-	margin: 100px auto;
+	margin: 70px auto;
 	width: 526px;
+	height: auto;
+}
+.inner-container {
+	float: left;
+	width: 100%;
 	height: auto;
 	min-height: 300px;
 	background-color: #FFFFFF;
@@ -19,21 +53,83 @@ body {
 .categories {
 	float: left;
 	width: 25%;
-	height: 300px;
-	background-color: #FCFCFC;
+	height: auto;
+	border-radius: 7px 7px 0 0;
 }
 .plan {
+	border-radius: 7px 7px 0 0;
 	height: 170px;
-	width: 100%;
-	background: -moz-linear-gradient(top,  rgba(0,0,0,0) 36%, rgba(0,0,0,0.24) 99%, rgba(0,0,0,0.25) 100%);
-	background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 36%,rgba(0,0,0,0.24) 99%,rgba(0,0,0,0.25) 100%);
-	background: linear-gradient(to bottom,  rgba(0,0,0,0) 36%,rgba(0,0,0,0.24) 99%,rgba(0,0,0,0.25) 100%); 
 }
-.plan2 {
-	height: 170px;
+.plan-top {
+	height: 32px;
+}
+.plan-top, .plan-bottom {
 	width: 100%;
-	background: rgb(157,214,47);
-	background: -moz-linear-gradient(top,  rgba(157,214,47,1) 52%, rgba(120,195,66,1) 100%, rgba(0,87,0,1) 100%, rgba(0,36,0,1) 100%);
-	background: -webkit-linear-gradient(top,  rgba(157,214,47,1) 52%,rgba(120,195,66,1) 100%,rgba(0,87,0,1) 100%,rgba(0,36,0,1) 100%); 
-	background: linear-gradient(to bottom,  rgba(157,214,47,1) 52%,rgba(120,195,66,1) 100%,rgba(0,87,0,1) 100%,rgba(0,36,0,1) 100%); 
+	float: left;
+}
+.white-gr  .plan-top {
+	padding-bottom: 2px;
+}
+.selected-color .white-gr  .plan-top {
+	border-bottom: 1px solid #A4C55D;
+	padding-bottom: 0px;
+}
+.selected-color .white-gr .plan-bottom {
+	border-top: 1px solid #A3E138;
+}
+.plan  h4 , .plan  h5, .plan  h1 {
+width: 100%;
+text-align: center;
+float: left;
+margin: 0 auto;
+}
+.plan  h4 {
+	color: #FFFFFF;
+	padding-bottom: 5px;
+    padding-top: 6px;
+	font-size: 13.5px;
+	font-weight: 600;
+}
+.plan  h5 {
+	color: #858C92;
+	padding-bottom: 0;
+    padding-top: 10px;
+	font-size: 13px;
+	font-weight: 600;
+}
+.plan h1 {
+	font-size: 50px;
+    font-weight: 500;
+    margin: -3px auto 0;
+    padding-top: 0;
+}
+.plan h1 span {
+	font-size: 14px;
+	font-weight: 600;
+}
+button {
+	border: medium none;
+    box-shadow: 0 2px 12px 1px #abb0b3;
+    color: #858c92;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 9.5%;
+    padding: 4px 10px;
+	cursor: pointer;
+	background: rgb(246,248,249);
+	background: -moz-linear-gradient(left, rgba(246,248,249,1) 0%, rgba(229,235,238,1) 0%, rgba(245,247,249,1) 21%, rgba(245,247,249,1) 80%, rgba(215,222,227,1) 100%);
+	background: -webkit-linear-gradient(left, rgba(246,248,249,1) 0%,rgba(229,235,238,1) 0%,rgba(245,247,249,1) 21%,rgba(245,247,249,1) 80%,rgba(215,222,227,1) 100%);
+	background: linear-gradient(to right, rgba(246,248,249,1) 0%,rgba(229,235,238,1) 0%,rgba(245,247,249,1) 21%,rgba(245,247,249,1) 80%,rgba(215,222,227,1) 100%);
+}
+button span {
+	color: #9DD62F;
+}
+.list {
+	border-bottom: 1px solid #ECECEC;
+	text-align: center;
+}
+.list  p {
+	margin: 9px auto;
+	font-size: 13px;
+	color: #686C6F;
 }
