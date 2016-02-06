@@ -39,7 +39,7 @@ body {
 }
 .main-container {
 	margin: 70px auto;
-	width: 526px;
+	width: 510px;
 	height: auto;
 }
 .inner-container {
@@ -132,4 +132,9 @@ button span {
 	margin: 9px auto;
 	font-size: 13px;
 	color: #686C6F;
+}
+.check {
+	background-image: url("../images/check.png");
+    background-position: center -6px;
+    background-size: 79% auto;
 }
